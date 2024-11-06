@@ -14,6 +14,7 @@ int add(int i, int j) {
 
 void BindPet(py::module &m);
 void BindWidget(py::module &m);
+void BindStl(py::module &m);
 
 PYBIND11_MODULE(pybinder, m) {
   m.def(
@@ -27,4 +28,5 @@ PYBIND11_MODULE(pybinder, m) {
 
   BindPet(m);
   BindWidget(m);
+  BindStl(m);
 }
